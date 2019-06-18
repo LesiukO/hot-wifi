@@ -1,20 +1,111 @@
-body {
-	color: #000;
-	font-family: sans-serif;
-}
-
+/* ------------   My custom reset 	     --------------- */
 *, *:after, *:before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
 }
 
+ul, img, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------   colors     	  		 --------------- */
+/* ------------   settings   	  		 --------------- */
+body {
+  color: #4e4e4e;
+  font-family: sans-serif;
+}
+
+/* ------------   main   	  		 --------------- */
+.main {
+  background-image: url(../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.main__wrap {
+  padding: 100px;
+  text-align: center;
+}
+.main__description {
+  font-size: 20px;
+  max-width: 850px;
+  margin: 70px auto 50px;
+}
+.main__button {
+  display: inline-block;
+  width: 20%;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  margin: 5px;
+  transition: 0.4s;
+}
+.main__button:hover {
+  background-color: #317bc7;
+  border-color: #317bc7;
+}
+
+.title-block {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.title-block__text {
+  font-size: 24px;
+  max-width: 380px;
+}
+.title-block__use {
+  display: inline-block;
+  background-color: #317bc7;
+  font-size: 28px;
+  letter-spacing: 15px;
+  padding: 10px 60px;
+  margin: 40px 0 20px;
+}
+.title-block__title {
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.title-block__title:after {
+  display: inline-block;
+  content: url(../img/main-icon.png);
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+}
+.title-block__place {
+  text-transform: uppercase;
+  font-size: 32px;
+  padding-bottom: 20px;
+  border-bottom: 7px solid #ffae46;
+  position: absolute;
+  left: 55%;
+  bottom: -90px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.title-block__place_hidden {
+  transition: 0.5s;
+  opacity: 0;
+}
+.title-block__place_visible {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */

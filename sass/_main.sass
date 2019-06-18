@@ -1,0 +1,68 @@
+.main
+	background-image: url(../img/main-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	color: $second-color
+	&__wrap
+		padding: 100px
+		text-align: center
+	&__description
+		font-size: 20px
+		max-width: 850px
+		margin: 70px auto 50px
+	&__button
+		display: inline-block
+		width: 20%
+		padding: 15px 35px
+		border-radius: 50px
+		border: 3px solid $second-color
+		margin: 5px
+		transition: 0.4s
+		&:hover
+			background-color: $color-bg
+			border-color: $color-bg
+.title-block
+	text-align: left
+	max-width: 800px
+	margin: 0 auto
+	position: relative
+	&__text
+		font-size: 24px
+		max-width: 380px
+	&__use
+		display: inline-block
+		background-color: $color-bg
+		font-size: 28px
+		letter-spacing: 15px
+		padding: 10px 60px
+		margin: 40px 0 20px
+	&__title
+		font-size: 120px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 10px
+		position: relative
+		margin-bottom: 150px
+		&:after
+			display: inline-block
+			content: url(../img/main-icon.png)
+			position: absolute
+			right: 100px
+			bottom: 40px
+	&__place
+		text-transform: uppercase
+		font-size: 32px
+		padding-bottom: 20px
+		border-bottom: 7px solid $yellow-color
+		position: absolute
+		left: 55%
+		bottom: -90px
+		transform: translateX(-50%)
+		transition: 0.5s
+		&_hidden
+			transition: 0.5s
+			opacity: 0
+		&_visible
+			opacity: 1
+			transition: 0.5s
