@@ -6,14 +6,8 @@ window.onload = function () {
 	function printNumbersTimeout20_100() {
 	  let i = 1;
 	  let timerId = setTimeout(function go() {
-	    console.log('place-' + i);
-	    console.log(places[i - 1]);
 	    let placeId = places[i - 1].getAttribute('id');
-	    console.log(placeId);
-
 	    if (placeId == 'place-' + i) {
-
-
 	    	for (let place of places) {
 	    		if (place.getAttribute('id') == 'place-' + i) {
 					place.classList.add("title-block__place_visible");
@@ -31,7 +25,6 @@ window.onload = function () {
 		}
 	  }, 3000);
 	}
-
 // вызов
 printNumbersTimeout20_100();
 
