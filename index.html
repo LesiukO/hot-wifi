@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hot Wifi</title>
-	
+
 	<!-- favicon -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png">
@@ -34,6 +34,63 @@
 			<div class="main__buttons">
 				<a href="#" class="main__button">Считать прибыль от внедрения</a>
 				<a href="#" class="main__button">Получить условия внедрения в чат</a>
+			</div>
+		</div>
+	</section>
+	<section class="calculate">
+		<h2 class="title calculate__title">УЗНАЙТЕ СКОЛЬКО КЛИЕНТОВ МОЖНО ПРИВЛЕЧЬ ИСПОЛЬЗУЯ <span class="text_blue">HOT WIFI</span> И WIFI-РАДАР</h2>
+		<p class="text calculate__description">и сколько дополнительного дохода может принести внедрение данных систем в ваш бизнес</p>
+		<div class="calculator">
+			<div class="calculator__ranges">
+				<div class="calculator__range">
+					<p class="text text_bold">Какое среднее количество посетителей у вас, В ДЕНЬ?</p>
+					<!-- <input type="text" name="range-text" id="range-text-1" class="range-text"> -->
+					<span class="range-text" id="range-text-1">80</span>
+					<input id="range-1" value="80" type="range" name="range" min="0" max="100" class="range">
+					<div class="range__min-max">
+						<span class="range__min">0 чел.</span>
+						<span class="range__max">100 чел.</span>
+					</div>
+				</div>
+				<div class="calculator__range">
+					<p class="text text_bold">Какое количество людей приблизительно проходит</p>
+					<p class="text">в радиусе 100 метров возле вашего заведения, В ДЕНЬ?</p>
+					<span class="range-text" id="range-text-2">60</span>
+					<input id="range-2" value="60" type="range" name="range" min="0" max="100" class="range">
+					<div class="range__min-max">
+						<span class="range__min">0 чел.</span>
+						<span class="range__max">100 чел.</span>
+					</div>
+				</div>
+				<div class="calculator__range">
+					<p class="text text_bold">Какой средний чек на 1 посетителя?</p>
+					<span class="range-text" id="range-text-3">80</span>
+					<span class="text">рублей</span>
+					<input id="range-3" value="80" type="range" name="range" min="0" max="100" class="range">
+					<div class="range__min-max">
+						<span class="range__min">0 чел.</span>
+						<span class="range__max">100 руб.</span>
+					</div>
+				</div>
+			</div>
+			<div class="calculator__results">
+				<div class="calculator__result">
+					<h2 class="title calculator__title">РАСЧЕТ</h2>
+					<p class="text">В среднем за месяц вы сможете вернуть :</p>
+					<span class="result__number" id="result__number_1">240</span>
+					<span class="result__text" id="result__text_1">клиентов</span>
+				</div>
+				<div class="calculator__result">
+					<p class="text">В среднем за месяц вы сможете привлечь:</p>
+					<span class="result__number" id="result__number_2">120</span>
+					<span class="result__text" id="result__text_1">новых посетителей</span>
+				</div>
+				<div class="calculator__result">
+					<p class="text">Приблизительный совокупный дополнительный доход :</p>
+					<span class="result__number" id="result__number_3">396480</span>
+					<span class="result__text" id="result__text_1">рублей, в месяц</span>
+				</div>
+				<a href="#" class="result-button">Получить условия внедрения в чат</a>
 			</div>
 		</div>
 	</section>

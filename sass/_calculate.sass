@@ -1,0 +1,145 @@
+.calculate
+	background-color: $light-bg
+	padding: 40px 0
+	&__title
+		max-width: 760px
+		margin: 0 auto
+		margin-bottom: 20px
+	&__description
+		text-align: center
+		max-width: 450px
+		margin: 0 auto
+		margin-bottom: 20px
+.calculator
+	max-width: 1200px
+	margin: 0 auto
+	box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.43)
+	border-radius: 10px
+	display: flex
+	justify-content: space-between
+	&__title
+		margin-bottom: 30px
+		margin-left: -80px
+	&__ranges
+		width: 50%
+		padding: 10px 25px
+	&__range
+		padding: 15px 0
+		border-bottom: 1px solid $light-grey
+		position: relative
+	&__results
+		width: 50%
+		color: $second-color
+		background-color: $dark-bg
+	&__result
+		padding: 20px 20px 20px 100px
+		&:nth-child(2)
+			background-color: #28374f
+.range
+	-webkit-appearance: none
+	border: 1px solid $light-grey
+	border-radius: 5px
+	width: 100%
+	height: 10px
+	background: -webkit-linear-gradient(left, $color-bg 0%, $color-bg 80%, $light-grey 80%, $light-grey 100%)
+	outline: none
+.range::-webkit-slider-thumb 
+	-webkit-appearance: none
+	height: 22px
+	width: 22px
+	background-color: $color-bg
+	border-radius: 50%
+	border: 3px solid $second-color
+	box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.43)
+	cursor: pointer
+.range::-moz-range-thumb 
+	-moz-appearance: none
+	height: 22px
+	width: 22px
+	background-color: $color-bg
+	border-radius: 50%
+	border: 3px solid $second-color
+	box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.43)
+	cursor: pointer
+.range::-moz-range-track
+	-moz-appearance: none
+	border: 1px solid $light-grey
+	border-radius: 5px
+	width: 100%
+	height: 10px
+	background: -moz-linear-gradient(left, $color-bg 0%, $color-bg 80%, $light-grey 80%, $light-grey 100%)
+	outline: none
+#range-2
+	background: -webkit-linear-gradient(left, $yellow-color 0%, $yellow-color 60%, $light-grey 60%, $light-grey 100%)
+#range-2::-webkit-slider-thumb 
+	background-color: $yellow-color
+#range-2::-moz-range-thumb
+	border: 3px solid $yellow-color
+#range-2::-moz-range-track
+	background: -moz-linear-gradient(left, $yellow-color 0%, $yellow-color 60%, $light-grey 60%, $light-grey 100%)
+#range-3
+	background: -webkit-linear-gradient(left, $green-color 0%, $green-color 80%, $light-grey 80%, $light-grey 100%)
+#range-3::-webkit-slider-thumb 
+	background-color: $green-color
+#range-3::-moz-range-thumb
+	border: 3px solid $green-color
+#range-3::-moz-range-track
+	background: -moz-linear-gradient(left, $green-color 0%, $green-color 80%, $light-grey 80%, $light-grey 100%)
+.range-text
+	display: inline-block
+	width: 120px
+	min-height: 25px
+	padding: 3px 20px 3px 20px
+	margin: 20px 0 10px
+	font-weight: 700
+	border: 2px solid $light-grey
+	outline: 0
+	background-color: $second-color
+.range__min-max
+	display: flex
+	justify-content: space-between
+	margin: 15px 0
+.range-number
+	display: inline-block
+	width: 80px
+	height: 20px
+.result
+	&-button
+		background-color: $color-bg
+		display: inline-block
+		margin: auto
+		padding: 15px 40px
+		margin-left: 120px
+		&:hover
+			background-color: $color-bg-hover
+	&__number
+		display: inline-block
+		width: 120px
+		min-height: 25px
+		background-color: $second-color
+		color: $text-color
+		font-weight: 700
+		padding: 10px 20px 10px 20px
+		margin: 20px 15px 30px 0
+		position: relative
+		&:before
+			display: inline-block
+			content: '1'
+			position: absolute
+			background-color: $color-bg
+			padding: 8px 15px
+			border-radius: 50%
+			color: $second-color
+			font-size: 26px
+			border: 8px solid $light-grey
+			top: -30px
+			left: -80px
+#result__number_2
+	&:before
+		background-color: $yellow-color
+		content: '2'
+#result__number_3
+	&:before
+		background-color: $green-color
+		content: '3'
+
