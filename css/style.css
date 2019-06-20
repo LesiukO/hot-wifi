@@ -22,12 +22,15 @@ ul, img, h1, h2, h3, p {
 body {
   color: #4e4e4e;
   font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .title {
   text-align: center;
   font-size: 22px;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .text {
@@ -47,7 +50,7 @@ body {
   font-weight: 700;
 }
 
-/* ------------   main   	  		 --------------- */
+/* ------------   main   	  			 --------------- */
 .main {
   background-image: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
@@ -305,7 +308,7 @@ body {
   content: "1";
   position: absolute;
   background-color: #317bc7;
-  padding: 8px 15px;
+  padding: 4px 15px;
   border-radius: 50%;
   color: #fff;
   font-size: 26px;
@@ -322,6 +325,97 @@ body {
 #result__number_3:before {
   background-color: #33c964;
   content: "3";
+}
+
+/* ------------   contact   	  		 --------------- */
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials__descriptions {
+  text-align: center;
+}
+.socials__title {
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 34px -10px rgba(0, 0, 0, 0.28);
+  border-radius: 50px;
+}
+
+.social-button {
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+  top: 0;
+}
+.social-button:hover {
+  top: -5px;
+}
+.social-button__text {
+  text-align: center;
+}
+
+.phone-form {
+  width: 50%;
+  background-color: #f9fbff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+.phone-form__form {
+  margin-top: 50px;
+}
+.phone-form__title {
+  color: #273145;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  padding: 23px 33px;
+  border: 2px solid #ece7e7;
+  border-radius: 40px;
+  width: 400px;
+  margin-bottom: 20px;
+  outline: 0;
+}
+.form__input:focus {
+  border-color: #317bc7;
+}
+.form__submit {
+  padding: 23px 33px;
+  border: 2px solid #ece7e7;
+  border-radius: 40px;
+  width: 400px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #273145;
+  margin-top: 20px;
+  outline: 0;
+}
+.form__submit:focus {
+  border-color: #317bc7;
 }
 
 /*# sourceMappingURL=style.css.map */

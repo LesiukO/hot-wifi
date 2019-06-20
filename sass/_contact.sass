@@ -1,0 +1,68 @@
+.contact
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+.socials
+	width: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	&__descriptions
+		text-align: center
+	&__title
+		margin-bottom: 20px
+.social-buttons
+	display: flex
+	justify-content: space-between
+	max-width: 400px
+	margin: 20px auto
+	padding: 10px 20px
+	box-shadow: 0px 0px 34px -10px rgba(0,0,0,0.28)
+	border-radius: 50px
+.social-button
+	text-align: center 
+	width: 90px
+	cursor: pointer
+	transition: 0.4s
+	position: relative
+	top: 0
+	&:hover
+		top: -5px
+	&__text
+		text-align: center
+.phone-form
+	width: 50%
+	background-color: $light-bg
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 80px 0
+	&__form
+		margin-top: 50px
+	&__title
+		color: $dark-bg
+.form
+	display: flex
+	flex-direction: column
+	&__input
+		padding: 23px 33px
+		border: 2px solid $light-grey
+		border-radius: 40px
+		width: 400px
+		margin-bottom: 20px
+		outline: 0
+		&:focus
+			border-color: $color-bg
+	&__submit
+		padding: 23px 33px
+		border: 2px solid $light-grey
+		border-radius: 40px
+		width: 400px
+		color: $second-color
+		text-transform: uppercase
+		background-color: $dark-bg
+		margin-top: 20px
+		outline: 0
+		&:focus
+			border-color: $color-bg
