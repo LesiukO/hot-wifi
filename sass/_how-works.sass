@@ -1,0 +1,153 @@
+.how-works
+	background-color: $color-bg
+	position: relative
+	padding: 30px 0
+	color: $second-color
+	&__title
+		color: $second-color
+		font-size: 36px
+		position: relative
+	&__description
+		max-width: 450px
+		margin: 0 auto
+		border-radius: 10px
+		padding: 15px 15px 15px 50px
+		box-shadow: 0px 0px 34px -10px rgba(0,0,0,0.28)
+		background-color: $color-bg
+		position: relative
+		z-index: 5
+		margin-bottom: 70px
+		&:before
+			display: inline-block
+			content: '1'
+			position: absolute
+			background-color: $second-color
+			padding: 4px 16px
+			border-radius: 50%
+			color: $color-bg
+			font-size: 26px
+			border: 8px solid $light-grey
+			top: 30px
+			left: -30px
+	&__circle
+		position: relative
+		z-index: 2
+		overflow: hidden
+		padding: 40px 0
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-image: url(../img/circle-img.png)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			// z-index: 1
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-image: url(../img/circle-bg.png)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			z-index: -1
+			animation: circle-animated 80s linear infinite
+	&__places
+		display: flex
+		justify-content: space-between
+		max-width: 900px
+		margin: 0 auto 80px
+		&:nth-child(3)
+			max-width: 1050px
+		&:nth-child(5)
+			justify-content: center
+	&__place
+		background-color: rgba($dark-bg, 0.15)
+		padding: 15px 50px 15px 90px
+		border-radius: 30px
+		position: relative
+		&:before
+			position: absolute
+			content: url(../img/place1.png)
+			left: 0
+			top: 0
+#how-works__place-2
+	&:before
+		content: url(../img/place2.png)
+#how-works__place-3
+	&:before
+		content: url(../img/place3.png)
+#how-works__place-4
+	&:before
+		content: url(../img/place4.png)
+#how-works__place-5
+	&:before
+		content: url(../img/place5.png)
+#how-works__place-6
+	&:before
+		content: url(../img/place6.png)
+#how-works__place-7
+	&:before
+		content: url(../img/place7.png)
+// .how-works__circle
+// 	display: inline-block
+// 	width: 550px
+// 	height: 550px
+// 	background-color: rgba($light-grey, 0.1)
+// 	position: absolute
+// 	left: 50%
+// 	top: 50%
+// 	border-radius: 50%
+// 	transform: translate(-50%, -50%) rotate(0deg)
+// 	animation: circle-animated 80s linear infinite
+// 	z-index: 2
+// 	&:before
+// 		display: inline-block
+// 		content: ''
+// 		position: absolute
+// 		width: 470px
+// 		height: 470px
+// 		border-radius: 50%
+// 		left: 0
+// 		top: 0
+// 		transform: translate(40px, 40px)
+// 		border: 2px dashed rgba($light-grey, 0.3)
+// 	&:after
+// 		display: inline-block
+// 		content: ''
+// 		position: absolute
+// 		width: 410px
+// 		height: 410px
+// 		border-radius: 50%
+// 		left: 0
+// 		top: 0
+// 		transform: translate(70px, 70px)
+// 		border: 2px dashed rgba($light-grey, 0.1)
+	// &_two
+	// 	// background-color: rgba($light-grey, 0.05)
+	// 	width: 700px
+	// 	height: 700px
+	// 	z-index: 1
+		// &:before
+		// 	width: 670px
+		// 	height: 670px
+		// 	transform: translate(15px, 15px)
+		// 	border: 2px dashed rgba($light-grey, 0.05)
+		// &:after
+		// 	width: 600px
+		// 	height: 600px
+		// 	transform: translate(50px, 50px)
+		// 	border: 2px dashed rgba($light-grey, 0.1)
+
+@keyframes circle-animated
+	0%
+		transform: rotate(0deg)
+	50%
+		transform: rotate(180deg)
+	100%
+		transform: rotate(360deg)
