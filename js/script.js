@@ -1,14 +1,16 @@
 window.onload = function () {
-	let places = document.querySelectorAll('.title-block__place');
-	let range1 = document.querySelector('#range-1');
-	let range2 = document.querySelector('#range-2');
-	let range3 = document.querySelector('#range-3');
-	let rangeText1 = document.querySelector('#range-text-1');
-	let rangeText2 = document.querySelector('#range-text-2');
-	let rangeText3 = document.querySelector('#range-text-3');
-	let resultNumber1 = document.querySelector('#result__number_1');
-	let resultNumber2 = document.querySelector('#result__number_2');
-	let resultNumber3 = document.querySelector('#result__number_3');
+	let places 			= document.querySelectorAll('.title-block__place');
+	let range1 			= document.querySelector('#range-1');
+	let range2 			= document.querySelector('#range-2');
+	let range3 			= document.querySelector('#range-3');
+	let rangeText1 		= document.querySelector('#range-text-1');
+	let rangeText2 		= document.querySelector('#range-text-2');
+	let rangeText3 		= document.querySelector('#range-text-3');
+	let resultNumber1 	= document.querySelector('#result__number_1');
+	let resultNumber2 	= document.querySelector('#result__number_2');
+	let resultNumber3 	= document.querySelector('#result__number_3');
+	let mainButton1 	= document.querySelector('#mainButton1');
+	let mainButton2 	= document.querySelector('#mainButton2');
 
 	range1.addEventListener('input', function(e) {
 		e.preventDefault;
@@ -60,5 +62,22 @@ window.onload = function () {
 // вызов
 changeText();
 
+	mainButton1.addEventListener('click', function(e) {
+			e.preventDefault();
+			let sectionId 	= this.getAttribute('href')
+			document.querySelector('' + sectionId).scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			})
+		});
+
+	mainButton2.addEventListener('click', function(e) {
+			e.preventDefault();
+			let sectionId 	= this.getAttribute('href')
+			document.querySelector('' + sectionId).scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			})
+		});
 
 }

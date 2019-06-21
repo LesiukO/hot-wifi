@@ -1,0 +1,69 @@
+.about
+	background-color: $light-bg
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__left
+		width: 50%
+		padding: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		background-image: url(../img/wheel.png)
+		background-repeat: no-repeat
+		background-position: center
+	&__right
+		width: 50%
+		padding: 60px 20px
+	&__description
+		padding: 30px 60px
+		background-color: $color-bg
+		margin: 0 auto
+		color: $second-color
+		border-radius: 10px
+		position: relative
+		top: -50px
+		&:before
+			display: inline-block
+			content: '2'
+			position: absolute
+			background-color: $second-color
+			padding: 4px 16px
+			border-radius: 50%
+			color: $color-bg
+			font-size: 26px
+			border: 8px solid $light-grey
+			top: 30px
+			left: -30px
+			position: absolute
+		&:after
+			display: inline-block
+			content: ''
+			position: absolute
+			background-color: $color-bg
+			width: 20px
+			height: 20px
+			transform: translateY(-50%) rotate(45deg)
+			right: -10px
+			top: 50%
+
+	&__feature
+		padding: 25px 60px
+		border-radius: 10px
+		position: relative
+		&:hover
+			box-shadow: -1px 3px 24px -3px rgba(0,0,0,0.68)
+			background-color: $second-color
+			&:before
+				background-position: -10px -5px
+		&:before
+			position: absolute
+			content: ''
+			display: inline-block
+			left: -20px
+			background-image: url(../img/check-sprite.png)
+			background-repeat: no-repeat
+			background-position: -65px -5px
+			transition: 0.4s
+			width: 65px
+			height: 50px
