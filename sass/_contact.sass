@@ -79,3 +79,16 @@
 		outline: 0
 		&:focus
 			border-color: $color-bg
+@media (max-width: 850px)
+	.form
+		&__input, &__submit
+			width: 310px
+	.social-buttons
+		flex-wrap: wrap
+		max-width: 305px
+		padding: 30px
+@media (max-width: 700px)
+	.contact
+		flex-direction: column
+	.socials, .phone-form
+		width: 100%

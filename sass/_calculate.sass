@@ -31,8 +31,10 @@
 		width: 50%
 		color: $second-color
 		background-color: $dark-bg
+		text-align: center
 	&__result
 		padding: 20px 20px 20px 100px
+		text-align: left
 		&:nth-child(2)
 			background-color: #28374f
 .range
@@ -107,9 +109,8 @@
 	&-button
 		background-color: $color-bg
 		display: inline-block
-		margin: auto
+		margin: 10px auto
 		padding: 15px 40px
-		margin-left: 120px
 		&:hover
 			background-color: $color-bg-hover
 	&__number
@@ -142,4 +143,21 @@
 	&:before
 		background-color: $green-color
 		content: '3'
-
+@media (max-width: 850px)
+	.result
+		&__number 
+			display: block
+@media (max-width: 700px)
+	.calculator
+		flex-direction: column
+		&__ranges, &__results
+			width: 100%
+	.result
+		&__number 
+			display: inline-block
+@media (max-width: 400px)
+	.result
+		&-button
+			padding: 15px 20px
+		&__number
+			display: block

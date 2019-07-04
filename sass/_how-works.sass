@@ -27,7 +27,8 @@
 			color: $color-bg
 			font-size: 26px
 			border: 8px solid $light-grey
-			top: 30px
+			top: 50%
+			transform: translateY(-50%)
 			left: -30px
 	&__circle
 		position: relative
@@ -52,7 +53,7 @@
 			right: 0
 			bottom: 0
 			left: 0
-			background-image: url(../img/circle-bg.png)
+			background-image: url('../img/circle-bg.png')
 			background-repeat: no-repeat
 			background-position: 50% 50%
 			z-index: -1
@@ -94,56 +95,6 @@
 #how-works__place-7
 	&:before
 		content: url(../img/place7.png)
-// .how-works__circle
-// 	display: inline-block
-// 	width: 550px
-// 	height: 550px
-// 	background-color: rgba($light-grey, 0.1)
-// 	position: absolute
-// 	left: 50%
-// 	top: 50%
-// 	border-radius: 50%
-// 	transform: translate(-50%, -50%) rotate(0deg)
-// 	animation: circle-animated 80s linear infinite
-// 	z-index: 2
-// 	&:before
-// 		display: inline-block
-// 		content: ''
-// 		position: absolute
-// 		width: 470px
-// 		height: 470px
-// 		border-radius: 50%
-// 		left: 0
-// 		top: 0
-// 		transform: translate(40px, 40px)
-// 		border: 2px dashed rgba($light-grey, 0.3)
-// 	&:after
-// 		display: inline-block
-// 		content: ''
-// 		position: absolute
-// 		width: 410px
-// 		height: 410px
-// 		border-radius: 50%
-// 		left: 0
-// 		top: 0
-// 		transform: translate(70px, 70px)
-// 		border: 2px dashed rgba($light-grey, 0.1)
-	// &_two
-	// 	// background-color: rgba($light-grey, 0.05)
-	// 	width: 700px
-	// 	height: 700px
-	// 	z-index: 1
-		// &:before
-		// 	width: 670px
-		// 	height: 670px
-		// 	transform: translate(15px, 15px)
-		// 	border: 2px dashed rgba($light-grey, 0.05)
-		// &:after
-		// 	width: 600px
-		// 	height: 600px
-		// 	transform: translate(50px, 50px)
-		// 	border: 2px dashed rgba($light-grey, 0.1)
-
 @keyframes circle-animated
 	0%
 		transform: rotate(0deg)
@@ -151,3 +102,25 @@
 		transform: rotate(180deg)
 	100%
 		transform: rotate(360deg)
+@media (max-width: 700px)
+	.how-works
+		&__circle
+			&:before, &:after
+				display: none
+		&__places
+			flex-direction: column
+			margin: 0
+		&__place
+			width: 300px
+			text-align: center
+			margin: 10px auto
+		&__description
+			margin: 0 auto
+			width: 70%
+@media (max-width: 400px)
+	.how-works
+		&__description
+			width: 95%
+			padding: 15px
+			&:before
+				display: none
